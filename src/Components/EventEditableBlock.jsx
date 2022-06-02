@@ -37,12 +37,12 @@ function EventEditableBlock(props) {
     }
 
         return(
-            <div className='eventInput'>
+            <div className='eventBlock'>
                 <span className='eventBlockDate'>{eventOnEdit.date}</span>
                 <form className='eventForm'>
                     <input type='text' name='description' value={eventOnEdit.description} onChange={changeEvent}/>
                 </form>
-                <EditButton handleClick={() => createEvent()} name="Создать"/>
+                <EditButton handleClick={() => createEvent()} name="ADD"/>
             </div>
         )
 }

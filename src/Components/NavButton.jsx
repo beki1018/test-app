@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const NavButton = (props) => {
 
   return (
-    <div className="NavButton">
+    <div className={props.className}>
       <NavLink to={props.link}>{props.name}</NavLink>
     </div>
   );

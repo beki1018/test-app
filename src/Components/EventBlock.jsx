@@ -9,7 +9,7 @@ class EventBlock extends Component {
 
     render() {
         return(
-            <div>
+            <div className='eventBlock'>
                 <span className='eventBlockDate'>{this.props.date}</span>
                 <p className='eventBlockDescription'>{this.props.description}</p>
             </div>

@@ -5,16 +5,14 @@ import EventEditableBlock from "./EventEditableBlock";
 const EventList = (props) => {
   var events = props.store.events.map((event) => {
     return (
-      <div className="events">
         <EventBlock date={event.date} description={event.description} />
-      </div>
     );
   });
 
   return (
-    <div>
+    <div className="eventList">
       {events}
-      {props.isEventEdit ? <EventEditableBlock /> : <></>}
+      {props.store.isEventEdit ? <EventEditableBlock /> : <></>}
     </div>
   );
 };
